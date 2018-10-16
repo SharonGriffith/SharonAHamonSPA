@@ -1,0 +1,264 @@
+﻿body {
+    color: black;
+    margin: 10px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+#sah_site_logo img {
+    border-radius: 10px;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100px;
+    position: absolute; /* within sah_banner*/
+}
+
+p {
+    padding-left: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#sah_site_name {
+    font-family: "Great Vibes", sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    position: absolute; /* within sah_banner*/
+    top: 10px;
+    left: 60px;
+}
+
+#sah_banner {
+    border-radius: 10px;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+#sah_social_media_icons_header {
+    position: absolute; /* within sah_banner*/
+    top: 0px;
+    right: 0px;
+    visibility: visible;
+}
+
+#sah_site_name h1 {
+    white-space: nowrap;
+    border-radius: 10px;
+    font-size: 24px;
+    display: inline;
+}
+
+#sah_social_media_icons_header > a.fa,
+#sah_social_media_icons_footer > a.fa {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+#main_grid_layout {
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 500px 500px;
+    grid-template-areas: "twitter_feed facebook_feed shot_worth_taking " "websites github_repos thunder"
+}
+
+.twitter_feed {
+    grid-area: twitter_feed;
+    border-radius: 10px;
+    width: 380px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.facebook_feed {
+    grid-area: facebook_feed;
+    border-radius: 10px;
+}
+
+.shot_worth_taking {
+    grid-area: shot_worth_taking;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#shot_worth_taking {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.thunder {
+    grid-area: thunder;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#thunder {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.websites {
+    grid-area: websites;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.github_repos {
+    grid-area: github_repos;
+    border-radius: 10px;
+    background-color: #292F33;
+    color: white;
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+#websites {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #292F33;
+    color: white;
+}
+
+#twitter_feed {
+    grid-area: twitter_feed;
+    background-color: #292F33;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 10px;
+}
+
+#facebook_feed {
+    grid-area: facebook_feed;
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 10px;
+}
+
+#github_repos {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+footer {
+    position: sticky relative;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+    display: inline-block;
+    width: auto;
+}
+
+#copyright {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+footer #sah_social_media_icons_footer {
+    position: sticky relative;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#github_repos a, #websites a {
+    color: #1b95e0;
+}
+
+@media only screen and (max-width: 600px) {
+    #sah_social_media_icons_header {
+        display: none;
+    }
+}
+    @media only screen and (max-width: 450px) {
+        #main_grid_layout {
+            grid-template-columns: 100%;
+            grid-template-areas: "twitter_feed", "facebook_feed", "websites", "github_repos"
+        }
+
+        .twitter_feed {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+
+        .facebook_feed, .shot_worth_taking, .thunder {
+            display: none;
+        }
+
+        #github_repos {
+            grid-column: 1;
+            grid-row: 3;
+            width: 380px;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+
+        #websites {
+            width: 380px;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    }
+
+    .fa {
+        padding: 10px;
+        width: 22px;
+        height: 22px;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+    .fa-github {
+        background: #24292e;
+        color: white;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #007bb6;
+        color: white;
+    }
+
+    .fa-google-plus {
+        background: #dd4b39;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #bc2a8d;
+        color: white;
+    }

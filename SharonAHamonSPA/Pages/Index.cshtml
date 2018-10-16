@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<main id="main_grid_layout" name="main_grid_layout" role="main">
+        <article class="twitter_feed" id="twitter_feed" name="twitter_feed" role="article">
+            <h2 role="heading" aria-level="2" hidden aria-hidden="false">Twitter Feed</h2>
+            <a class="twitter-timeline" data-width="380" data-height="200" data-theme="dark" data-link-color="#7244AA" href="https://twitter.com/SharonAHamon?ref_src=twsrc%5Etfw">Tweets by Sharon A. Hamon</a>
+        </article>
+
+        <article class="shot_worth_taking" id="shot_worth_taking" name="shot_worth_taking" role="article" aria-hidden="true">
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/1oickg8yzh4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </article>
+
+        <article class="thunder" id="thunder" name="thunder" role="article" aria-hidden="true">
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/fKopy74weus?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </article>
+</main>
