@@ -24,16 +24,23 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    font-size: 14px;
+} 
+
 #sah_site_name {
-    font-family: "Great Vibes", sans-serif;
     font-size: 14px;
     padding: 5px;
     position: absolute; /* within sah_banner*/
-    top: 10px;
-    left: 60px;
+    top: 35px;
+    left: 100px;
 }
 
+#sah_site_name {
+    font-family: 'Homemade Apple', cursive;
+    font-weight: bolder;
+}
+ 
 #sah_banner {
     border-radius: 10px;
     top: 0px;
@@ -46,12 +53,12 @@ h6,
 
 #sah_social_media_icons_header {
     position: absolute; /* within sah_banner*/
-    top: 0px;
+    top: 50px;
     right: 0px;
     visibility: visible;
 }
 
-#sah_site_name h1 {
+#sah_site_name span {
     white-space: nowrap;
     border-radius: 10px;
     font-size: 24px;
@@ -63,6 +70,7 @@ h6,
     font-size: 20px;
     padding: 20px;
     text-align: center;
+    display: inline;
 }
 
 nav li {
@@ -175,8 +183,8 @@ footer {
 }
 
 footer #sah_social_media_icons_footer {
-    position: sticky relative;
-    bottom: 0px;
+    position: relative;
+    bottom: -20px;
     left: 0px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -186,79 +194,86 @@ footer #sah_social_media_icons_footer {
     color: #1b95e0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
+    .thunder {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
     #sah_social_media_icons_header {
         display: none;
     }
 }
-    @media only screen and (max-width: 450px) {
-        #main_grid_layout {
-            grid-template-columns: 100%;
-            grid-template-areas: "twitter_feed", "facebook_feed", "websites", "github_repos"
-        }
 
-        .twitter_feed {
-            margin-left: 0px;
-            margin-top: 0px;
-        }
-
-        .facebook_feed, .shot_worth_taking, .thunder {
-            display: none;
-        }
-
-        #github_repos {
-            grid-column: 1;
-            grid-row: 3;
-            width: 380px;
-            margin-left: 0px;
-            margin-top: 0px;
-        }
-
-        #websites {
-            width: 380px;
-            margin-left: 0px;
-            margin-top: 0px;
-        }
+@media only screen and (max-width: 450px) {
+    #main_grid_layout {
+        grid-template-columns: 100%;
+        grid-template-areas: "twitter_feed", "facebook_feed", "websites", "github_repos"
     }
 
-    .fa {
-        padding: 10px;
-        width: 22px;
-        height: 22px;
-        text-decoration: none;
-        border-radius: 50%;
+    .twitter_feed {
+        margin-left: 0px;
+        margin-top: 0px;
     }
 
-        .fa:hover {
-            opacity: 0.7;
-        }
-
-    .fa-github {
-        background: #24292e;
-        color: white;
+    .facebook_feed, .shot_worth_taking, .thunder {
+        display: none;
     }
 
-    .fa-facebook {
-        background: #3B5998;
-        color: white;
+    #github_repos {
+        grid-column: 1;
+        grid-row: 3;
+        width: 380px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
 
-    .fa-twitter {
-        background: #55ACEE;
-        color: white;
+    #websites {
+        width: 380px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
+}
 
-    .fa-linkedin {
-        background: #007bb6;
-        color: white;
-    }
+.fa {
+    padding: 10px;
+    width: 22px;
+    height: 22px;
+    text-decoration: none;
+    border-radius: 50%;
+}
 
-    .fa-google-plus {
-        background: #dd4b39;
-        color: white;
-    }
+.fa:hover {
+    opacity: 0.7;
+}
 
-    .fa-instagram {
-        background: #bc2a8d;
-        color: white;
-    }
+.fa-github {
+    background: #24292e;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb6;
+    color: white;
+}
+
+.fa-google-plus {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-instagram {
+    background: #bc2a8d;
+    color: white;
+}
