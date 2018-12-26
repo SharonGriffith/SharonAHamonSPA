@@ -2,48 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Project Portfolio/Social Media Dashboard" />
+    <meta name="description" content="Resources/Social Media Dashboard" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Sharon A. Hamon" />
-    <meta property="og:description" content="Project Portfolio/Social Media Dashboard" />
+    <meta property="og:description" content="Resources/Social Media Dashboard" />
     <meta property="og:image" content="https://en.gravatar.com/userimage/142998852/de3f5bfc19695f5544f589846522268e.png" />
     <meta property="og:url" content="http://www.sharonahamon.com" />
     <meta property="og:site_name" content="Sharon A. Hamon" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="SharonAHamon" />
-    <meta name="twitter:image:alt" content="" />
+    <meta name="twitter:image:alt" content="Sharon A. Hamon" />
     <meta name="twitter:app:country" content="US">
     <meta name="twitter:creator" content="Sharon A. Hamon" />
-    <!--meta name="theme-color" content="#2e231f" /-->
     <title>Sharon A. Hamon</title>
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="https://en.gravatar.com/userimage/142998852/de3f5bfc19695f5544f589846522268e.png">
     <!--link rel="manifest" href="~/manifest.json"-->
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=326260591454818&autoLogAppEvents=1';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-        <link rel="stylesheet" href="~/css/grid.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-        <link rel="stylesheet" href="~/css/grid.css" />
-    </environment>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/grid.css" />
+
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+          asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+          asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -56,12 +39,14 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/Privacy">Privacy Policy</a></li>
-                </ul>
-            </div>
+            <!--
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a asp-page="/Index">Welcome</a></li>
+            <li><a asp-page="/Privacy">Privacy Policy</a></li>
+        </ul>
+    </div>
+        -->
         </div>
     </nav>
 
@@ -70,18 +55,18 @@
     <div class="container body-content">
         <header id="sah_banner" name="sah_banner" role="banner">
             <span id="sah_site_logo">
-                <a asp-page="/Index" class="navbar-brand"><img src="~/images/standing.png" alt="" /></a>
+                <a asp-page="/Index" class="navbar-brand"><img src="~/images/standing.png" alt="Link back to Welcome Page" /></a>
             </span>
 
             <span id="sah_site_name">
-                <span role="heading" aria-level="1">Sharon A. Hamon</span>
+                <span role="heading">Sharon A. Hamon</span>
             </span>
 
-            <span id="sah_social_media_icons_header">
-                <a href="https://www.facebook.com/SharonAHamon" class="fa fa-facebook" aria-label="Facebook"></a>
-                <a href="https://twitter.com/SharonAHamon" class="fa fa-twitter" aria-label="Twitter"></a>
-                <a href="https://plus.google.com/u/0/102970149869422178618" class="fa fa-google-plus" aria-label="Google+"></a>
-                <a href="https://www.instagram.com/sharonahamon/" class="fa fa-instagram" aria-label="Instagram"></a>
+            <span id="sah_social_media_icons_header" aria-hidden="true">
+                <a href="https://www.facebook.com/SharonAHamon" class="fa fa-facebook" aria-hidden="true"></a>
+                <a href="https://twitter.com/SharonAHamon" class="fa fa-twitter" aria-hidden="true"></a>
+                <a href="https://plus.google.com/u/0/102970149869422178618" class="fa fa-google-plus" aria-hidden="true"></a>
+                <a href="https://www.instagram.com/sharonahamon/" class="fa fa-instagram" aria-hidden="true"></a>
             </span>
         </header>
 
@@ -90,26 +75,26 @@
         <footer role="contentinfo" aria-label="footer">
             <p>&copy; 2018 Sharon A. Hamon </p>
 
-            <h2 hidden aria-hidden="false" role="heading" aria-level="2">Social Media</h2>
+            <!--            <nav role="navigation">
+        <a asp-controller="Home" asp-action="Index">Welcome</a> |
+        <a asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+    </nav>-->
+
+
             <span id="sah_social_media_icons_footer" aria-label="social media icons">
-                <h3 hidden aria-hidden="false" role="heading" aria-level="3">Facebook</h3>
+                <h2 hidden aria-hidden="false">Facebook</h2>
                 <a href="https://www.facebook.com/SharonAHamon" class="fa fa-facebook" aria-label="Facebook"></a>
-                <h3 hidden aria-hidden="false" role="heading" aria-level="3">Twitter</h3>
+                <h2 hidden aria-hidden="false">Twitter</h2>
                 <a href="https://twitter.com/SharonAHamon" class="fa fa-twitter" aria-label="Twitter"></a>
-                <h3 hidden aria-hidden="false" role="heading" aria-level="3">Google+</h3>
+                <h2 hidden aria-hidden="false">Google+</h2>
                 <a href="https://plus.google.com/u/0/102970149869422178618" class="fa fa-google-plus" aria-label="Google+"></a>
-                <h3 hidden aria-hidden="false" role="heading" aria-level="3">Instagram</h3>
+                <h2 hidden aria-hidden="false">Instagram</h2>
                 <a href="https://www.instagram.com/sharonahamon/" class="fa fa-instagram" aria-label="Instagram"></a>
             </span>
         </footer>
     </div>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
+
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"
@@ -123,7 +108,6 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
 
     @RenderSection("Scripts", required: false)
 </body>

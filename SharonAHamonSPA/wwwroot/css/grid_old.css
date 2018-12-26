@@ -15,6 +15,10 @@
     position: absolute; /* within sah_banner*/
 }
 
+p {
+    padding-left: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -51,6 +55,7 @@ h6 {
     position: absolute; /* within sah_banner*/
     top: 50px;
     right: 0px;
+    visibility: visible;
 }
 
 #sah_site_name span {
@@ -72,7 +77,18 @@ nav li {
     display: inline-block;
 }
 
+#main_grid_layout {
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 500px 500px;
+    grid-template-areas: "twitter_feed facebook_feed shot_worth_taking " "websites github_repos thunder"
+}
+
 .twitter_feed {
+    grid-area: twitter_feed;
     border-radius: 10px;
     width: 380px;
     height: 200px;
@@ -80,9 +96,75 @@ nav li {
     margin-top: 50px;
 }
 
-#twitter_feed {
-    background-color: #292F33;
+.facebook_feed {
+    grid-area: facebook_feed;
     border-radius: 10px;
+}
+
+.shot_worth_taking {
+    grid-area: shot_worth_taking;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#shot_worth_taking {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.thunder {
+    grid-area: thunder;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#thunder {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.websites {
+    grid-area: websites;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.github_repos {
+    grid-area: github_repos;
+    border-radius: 10px;
+    background-color: #292F33;
+    color: white;
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+#websites {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #292F33;
+    color: white;
+}
+
+#twitter_feed {
+    grid-area: twitter_feed;
+    background-color: #292F33;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 10px;
+}
+
+#facebook_feed {
+    grid-area: facebook_feed;
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 10px;
+}
+
+#github_repos {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 footer {
@@ -90,6 +172,7 @@ footer {
     bottom: 0px;
     left: 0px;
     border-radius: 10px;
+    display: inline-block;
     width: auto;
 }
 
@@ -107,16 +190,49 @@ footer #sah_social_media_icons_footer {
     margin-left: 10px;
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 650px) {
+#github_repos a, #websites a {
+    color: #1b95e0;
+}
+
+@media only screen and (max-width: 550px) {
+    .thunder {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
     #sah_social_media_icons_header {
-        visibility: hidden;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #main_grid_layout {
+        grid-template-columns: 100%;
+        grid-template-areas: "twitter_feed", "facebook_feed", "websites", "github_repos"
+    }
+
+    .twitter_feed {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .facebook_feed, .shot_worth_taking, .thunder {
         display: none;
     }
 
-    #sah_social_media_icons_footer {
-        visibility: visible;
-        display: normal;
+    #github_repos {
+        grid-column: 1;
+        grid-row: 3;
+        width: 380px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #websites {
+        width: 380px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
 }
 
