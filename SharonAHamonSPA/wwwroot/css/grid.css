@@ -6,6 +6,12 @@
     line-height: 1.5em;
 }
 
+body > nav.navbar.navbar-inverse.navbar-fixed-top {
+    background-color: white;
+    border-color: white;
+    display: none;
+}
+
 #sah_site_logo img {
     border-radius: 10px;
     top: 0px;
@@ -66,6 +72,10 @@ h6 {
     padding: 20px;
     text-align: center;
     display: inline;
+}
+
+nav {
+    left: 0px;
 }
 
 nav li {
