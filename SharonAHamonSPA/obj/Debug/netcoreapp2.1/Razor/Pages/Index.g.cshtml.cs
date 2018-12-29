@@ -66,7 +66,7 @@ using SharonAHamonSPA;
         <li>");
             EndContext();
             BeginContext(631, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c813c8eacab4b0a86fdef3c095a95c4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "956ad9c35e274c37aa6424dba92c2a4f", async() => {
                 BeginContext(651, 14, true);
                 WriteLiteral("Privacy Policy");
                 EndContext();

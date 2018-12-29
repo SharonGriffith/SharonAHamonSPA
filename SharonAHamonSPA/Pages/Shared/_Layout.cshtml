@@ -71,9 +71,12 @@
         </header>
 
         @RenderBody()
-
+        @{
+            String currentYear = @DateTime.Now.ToString("yyyy");
+            String displayYear = currentYear.Equals("2018") ? currentYear : "2018-" + currentYear;
+        }
         <footer>
-            <p>&copy; 2018 Sharon A. Hamon </p>
+            <p>&copy; @displayYear Sharon A. Hamon </p>
 
             <!--            <nav role="navigation">
         <a asp-controller="Home" asp-action="Index">Welcome</a> |
