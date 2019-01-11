@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@{var title = @ViewData["Title"] + " | Sharon A. Hamon"; }
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -14,7 +16,7 @@
     <meta name="twitter:image:alt" content="Sharon A. Hamon" />
     <meta name="twitter:app:country" content="US">
     <meta name="twitter:creator" content="Sharon A. Hamon" />
-    <title>Sharon A. Hamon</title>
+    <title>@{@title}</title>
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="https://en.gravatar.com/userimage/142998852/de3f5bfc19695f5544f589846522268e.png">
@@ -55,7 +57,7 @@
     <div class="container body-content">
         <header id="sah_banner" name="sah_banner" role="banner">
             <span id="sah_site_logo">
-                <a asp-page="/Index" class="navbar-brand"><img src="~/images/standing.png" alt="Link back to Welcome Page" /></a>
+                <a asp-page="/Index" class="navbar-brand"><img src="~/images/standing.png" alt="Welcome Page" /></a>
             </span>
 
             <span id="sah_site_name">
