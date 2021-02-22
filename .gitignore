@@ -331,3 +331,4 @@ ASALocalRun/
 
 # Winhost
 .pubxml
+*.cs
