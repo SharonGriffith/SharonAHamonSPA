@@ -4,10 +4,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="UI/UX Resources" />
+    <meta name="description" content="Web Development Resources" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Sharon A. Hamon" />
-    <meta property="og:description" content="UI/UX Resources" />
+    <meta property="og:description" content="Web Development Resources" />
     <meta property="og:image" content="https://www.sharonahamon.com/images/standing.png" />
     <meta property="og:url" content="https://www.sharonahamon.com" />
     <meta property="og:site_name" content="Sharon A. Hamon" />
@@ -75,17 +75,12 @@
 
         <nav>
             <ul>
-                <li><a href="https://www.sharonahamon.com#Accessibility">Accessibility</a> | </li>
-                <li><a href="https://www.sharonahamon.com#Business / Collaboration Tools">Business Tools</a> | </li>
-                <li><a href="https://www.sharonahamon.com#Color Palettes">Color Palettes</a> | </li>
-                <li><a href="https://www.sharonahamon.com#Design Patterns/ Templates">Design Templates</a> | </li>
-                <li><a href="https://www.sharonahamon.com#Fonts">Fonts</a> | </li>
-                <li><a href="https://www.sharonahamon.com#Graphics / Icons / Images / Logos">Graphics</a> | </li>
+                <li><a href="https://www.sharonahamon.com/Accessibility">Accessibility</a> | </li>
+                <li><a href="https://www.sharonahamon.com/Business">Business</a> | </li>
+                <li><a href="https://www.sharonahamon.com/Design">Design</a> | </li>
                 <li><a href="https://www.sharonahamon.com/Freelance">Freelance</a> | </li>
-                <li><a href="https://www.sharonahamon.com/privacy">Privacy Policy</a> | </li>
-                <li><a href="https://www.sharonahamon.com#Prototyping">Prototyping</a> | </li>
-                <li><a href="https://www.sharonahamon.com#Testing">Testing</a> | </li>
-                <li><a href="https://twitter.com/SharonAHamon">Twitter Feed</a></li>
+                <li><a href="https://www.sharonahamon.com/Prototyping">Prototyping</a> | </li>
+                <li><a href="https://www.sharonahamon.com/Testing">Testing</a></li>
             </ul>
         </nav>
 
@@ -94,23 +89,22 @@
             String currentYear = @DateTime.Now.ToString("yyyy");
             String displayYear = currentYear.Equals("2018") ? currentYear : "2018-" + currentYear;
         }
-        <footer>
-            <p><small>Disclaimer: I am not being paid to publish these links, nor have I necessarily visited them all or use them regularly.  For your safety, make sure your computer firewall and anti-virus software is up-to-date before clicking any links on this site.</p>
-            
-            <p>&copy; @displayYear Sharon A. Hamon </p>
+    <footer>
+        <hr />
+        <p><small>Disclaimer: I am not being paid to publish these links, nor have I necessarily visited them all or use them regularly.  For your safety, make sure your computer firewall and anti-virus software is up-to-date before clicking any links on this site.</p>
 
-            <!--            <nav role="navigation">
-        <a asp-controller="Home" asp-action="Index">Welcome</a> |
-        <a asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
-    </nav>-->
+        <p>&copy; @displayYear Sharon A. Hamon </p>
 
+        <nav role="navigation">
+            <p><a href="https://www.sharonahamon.com/privacy">Privacy Policy</a></p>
+        </nav>
 
-            <span id="sah_social_media_icons_footer">
-                <a href="https://www.facebook.com/SharonAHamon" class="fa fa-facebook" aria-label="Facebook"></a>
-                <a href="https://twitter.com/SharonAHamon" class="fa fa-twitter" aria-label="Twitter"></a>
-                <a href="https://github.com/sharonahamon/" class="fa fa-github" aria-label="Github"></a>
-            </span>
-        </footer>
+        <span id="sah_social_media_icons_footer">
+            <a href="https://www.facebook.com/SharonAHamon" class="fa fa-facebook" aria-label="Facebook"></a>
+            <a href="https://twitter.com/SharonAHamon" class="fa fa-twitter" aria-label="Twitter"></a>
+            <a href="https://github.com/sharonahamon/" class="fa fa-github" aria-label="Github"></a>
+        </span>
+    </footer>
     </div>
 
 
